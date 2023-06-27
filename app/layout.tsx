@@ -37,8 +37,8 @@ export default function RootLayout({
         />
       </head>
       <body className={titillium.className}>
-        <header>
-          <nav className="flex items-center justify-between flex-wrap bg-white p-6">
+        <header className="flex  sm:block">
+          <nav className="flex sm:flex-row flex-col  sm:items-center justify-between flex-wrap bg-white p-6">
             <Link href="/">
               <Image
                 src={logo}
