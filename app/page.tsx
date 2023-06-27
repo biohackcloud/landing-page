@@ -59,7 +59,7 @@ export default async function Home() {
               className=" py-0 px-[1.5em] md:border-r-gray md:border-r-[1px] md:last:border-r-0 "
             >
               <Image
-                src={`/img/${item.icon}`}
+                src={`img/${item.icon}`}
                 alt={item.title}
                 width={100}
                 height={100}
