@@ -11,6 +11,9 @@ module.exports = {
         highlight: "#576128",
         gray: "#DBDBDB",
       },
+      textColor: {
+        main: "#565D51",
+      },
 
       fontSize: {
         h4: ["1.5em", "1.5em"],

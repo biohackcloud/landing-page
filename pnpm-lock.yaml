@@ -11,12 +11,6 @@ dependencies:
   '@mdx-js/react':
     specifier: ^2.3.0
     version: 2.3.0(react@18.2.0)
-  '@next/mdx':
-    specifier: ^13.4.7
-    version: 13.4.7(@mdx-js/loader@2.3.0)(@mdx-js/react@2.3.0)
-  '@types/mdx':
-    specifier: ^2.0.5
-    version: 2.0.5
   '@types/node':
     specifier: 20.3.1
     version: 20.3.1
@@ -223,22 +217,6 @@ packages:
     resolution: {integrity: sha512-ANEPltxzXbyyG7CvqxdY4PmeM5+RyWdAJGufTHnU+LA/i3J6IDV2r8Z4onKwskwKEhwqzz5lMaSYGGXLyHX+mg==}
     dependencies:
       glob: 7.1.7
-    dev: false
-
-  /@next/mdx@13.4.7(@mdx-js/loader@2.3.0)(@mdx-js/react@2.3.0):
-    resolution: {integrity: sha512-btb4ym4Gz72ACQjSlK+AsJRx5IYcS9O0FgUWK4/+9AJxLQtr5XNOAfpy1ioLqXG7REVvwWAea4z6Hp0agwc+Vg==}
-    peerDependencies:
-      '@mdx-js/loader': '>=0.15.0'
-      '@mdx-js/react': '>=0.15.0'
-    peerDependenciesMeta:
-      '@mdx-js/loader':
-        optional: true
-      '@mdx-js/react':
-        optional: true
-    dependencies:
-      '@mdx-js/loader': 2.3.0(webpack@5.88.0)
-      '@mdx-js/react': 2.3.0(react@18.2.0)
-      source-map: 0.7.4
     dev: false
 
   /@next/swc-darwin-arm64@13.4.7:

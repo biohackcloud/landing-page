@@ -6,7 +6,7 @@ import logo from "../public/img/logo.png";
 
 const titillium = Titillium_Web({
   subsets: ["latin-ext"],
-  weight: ["400", "600", "700"],
+  weight: ["200", "300", "400", "600", "700", "900"],
 });
 
 export const metadata: Metadata = {
