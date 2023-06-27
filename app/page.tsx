@@ -36,7 +36,7 @@ export default async function Home() {
   const data = await getFrontData();
 
   return (
-    <main>
+    <>
       <div
         id="kv"
         className=" flex md:flex-row flex-col-reverse justify-center items-center my-0 mx-[2em]"
@@ -77,6 +77,6 @@ export default async function Home() {
           );
         })}
       </ul>
-    </main>
+    </>
   );
 }

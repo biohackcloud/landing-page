@@ -3,6 +3,8 @@ import { Titillium_Web } from "next/font/google";
 import type { Metadata } from "next";
 import Image from "next/image";
 import logo from "../public/img/logo.png";
+import Link from "next/link";
+import Navbar from "@/components/NavBar";
 
 const titillium = Titillium_Web({
   subsets: ["latin-ext"],
@@ -36,13 +38,18 @@ export default function RootLayout({
       </head>
       <body className={titillium.className}>
         <header>
-          <Image
-            src={logo}
-            alt="BioHackCloud"
-            className=" w-[18em] my-[1em] mx-auto"
-          />
+          <nav className="flex items-center justify-between flex-wrap bg-white p-6">
+            <Link href="/">
+              <Image
+                src={logo}
+                alt="BioHackCloud"
+                className=" w-[18em] my-[1em]"
+              />
+            </Link>
+            <Navbar />
+          </nav>
         </header>
-        {children}
+        <main className=" px-6">{children}</main>
         <footer className=" px-0 py-[2em] font-bold text-center">
           <p>BioHackCloud 2023</p>
         </footer>
