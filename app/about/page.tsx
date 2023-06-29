@@ -1,57 +1,39 @@
-"use client";
-import Link from 'next/link';
-import { usePathname } from "next/navigation";
+import fs from "fs/promises";
+import path from "path";
+import matter from "gray-matter";
+import { remark } from "remark";
+import remarkGfm from "remark-gfm";
+import html from "remark-html";
+import { components, config } from "@/config/config.markdoc";
+import Markdoc from "@markdoc/markdoc";
+import React from "react";
 
-export default function Page() {
-    const currentRoute = usePathname();
-    return (
-        <section>
-            <div>
-                <h2 className=" text-[1.5em] font-bold text-highlight">
-                    What is the BioHackCloud?
-                </h2>
-                <p className=" text-[1.5em] font-light">
-                    The BioHackCloud is an entry point to use cloud services
-                    for various use cases that bioinformaticians typically
-                    face.
-                </p>
-                <h2 className=" text-[1.5em] font-bold text-highlight">
-                    What can one do with the BioHackCloud?
-                </h2>
-                <p className=" text-[1.5em] font-light">
-                    See the
-                    <Link
-                        className=" font-bold text-highlight"
-                        href={"/docs"}
-                    > documentation </Link>
-                    for supported use cases. New use cases will be continuously
-                    added.
-                </p>
-                <h2 className=" text-[1.5em] font-bold text-highlight">
-                    Who can use the BioHackCloud?
-                </h2>
-                <p className=" text-[1.5em] font-light">
-                    The BioHackCloud is available exclusively for participants
-                    of BioHackathon events. If you want to use it, please
-                    <Link
-                        className=" font-bold text-highlight"
-                        href={"/use-case"}
-                    > submit a use case </Link>
-                    .
-                </p>
-                <h2 className=" text-[1.5em] font-bold text-highlight">
-                    Who is building the BioHackCloud?
-                </h2>
-                <p className=" text-[1.5em] font-light">
-                    The BioHackCloud is built by the BioHackathon community.
-                    If you are interested in contributing, please
-                    <Link
-                        className=" font-bold text-highlight"
-                        href={"/collaborate"}
-                    > sign up </Link>
-                    .
-                </p>
-            </div>
-        </section>
-    );
+async function getData() {
+  const filePath = path.join(process.cwd(), "content", "about", "about.md");
+
+  const fileContents = await fs.readFile(filePath, "utf-8");
+  const frontMatter = matter(fileContents);
+
+  const ast = Markdoc.parse(fileContents);
+  const content = Markdoc.transform(ast, config);
+  return { content };
+
+  // const contentHtml = processedContent.toString();
+
+  // return {
+  //   contentHtml,
+  // };
+}
+export default async function Page() {
+  const { content } = await getData();
+
+  return (
+    // <section
+    //   className=" markdown max-w-[600px] mx-auto my-10]"
+    //   dangerouslySetInnerHTML={{ __html: data.contentHtml }}
+    // ></section>
+    <section className=" markdown max-w-[600px] mx-auto my-10]">
+      {Markdoc.renderers.react(content, React, { components })}
+    </section>
+  );
 }

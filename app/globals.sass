@@ -1,0 +1,22 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+body
+  background: #fff
+  color: #1a1c19
+
+@layer components
+  .markdown
+    a
+      color: theme("textColor.main")
+      text-decoration: underline
+      &:hover
+        color: theme("colors.highlight")
+
+    h2
+      color: theme("textColor.main")
+      font-size: 1.5em
+      font-weight: 400
+      margin-top: 2rem
+      margin-bottom: 1rem
