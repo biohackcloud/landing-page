@@ -54,18 +54,6 @@ export default function Navbar() {
           Submit use case
         </Link>
       </li>
-      <li>
-        <Link
-          href={"/contact"}
-          className={`${
-            currentRoute === "/contact"
-              ? " text-white bg-highlight px-2 py-0 rounded"
-              : "px-2 py-0"
-          }`}
-        >
-          Contact us
-        </Link>
-      </li>
     </ul>
   );
 }
