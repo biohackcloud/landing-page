@@ -71,7 +71,7 @@ export default async function Home() {
                     {item.title}
                   </h4>
                 </div>
-                <p className=" text-main font-light">{item.content}</p>
+                <p className=" text-main font-light text-center">{item.content}</p>
               </div>
             </li>
           );
