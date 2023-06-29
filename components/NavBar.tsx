@@ -32,14 +32,14 @@ export default function Navbar() {
       </li>
       <li>
         <Link
-          href={"/collaborate"}
+          href={"/contribute"}
           className={`${
-            currentRoute === "/collaborate"
+            currentRoute === "/contribute"
               ? " text-white bg-highlight px-2 py-0 rounded"
               : "px-2 py-0"
           }`}
         >
-          Collaborate
+          Contribute
         </Link>
       </li>
       <li>
