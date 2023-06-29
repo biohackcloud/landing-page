@@ -5,7 +5,7 @@ import Image from "next/image";
 import logo from "../public/img/logo.png";
 import Link from "next/link";
 import Navbar from "@/components/NavBar";
-
+import { FaRegEnvelope } from "react-icons/fa6";
 const titillium = Titillium_Web({
   subsets: ["latin-ext"],
   weight: ["200", "300", "400", "600", "700", "900"],
@@ -50,8 +50,14 @@ export default function RootLayout({
           </nav>
         </header>
         <main className=" px-6">{children}</main>
-        <footer className=" px-0 py-[2em] font-bold text-center">
-          <p>BioHackCloud 2023</p>
+        <footer className=" px-0 py-[2em] text-center">
+          <a
+            className=" font-bold  text-highlight align-middle"
+            href="mailto:support@biohack.cloud"
+          >
+            <FaRegEnvelope className="inline-block mr-2" />
+            <span className="align-middle">BioHackCloud 2023</span>
+          </a>
         </footer>
       </body>
     </html>
