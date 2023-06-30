@@ -44,6 +44,18 @@ export default function Navbar() {
       </li>
       <li>
         <Link
+          href={"/sponsors"}
+          className={`${
+            currentRoute === "/sponsors"
+              ? " text-white bg-highlight px-2 py-0 rounded"
+              : "px-2 py-0"
+          }`}
+        >
+          Sponsors
+        </Link>
+      </li>
+      <li>
+        <Link
           href={"/use-case"}
           className={`${
             currentRoute === "/use-case"
