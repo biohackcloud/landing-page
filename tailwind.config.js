@@ -17,6 +17,7 @@ module.exports = {
 
       fontSize: {
         h4: ["1.5em", "1.5em"],
+        h2: ["2em", "2em"],
         h1: "2.5em",
       },
     },

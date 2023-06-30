@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./globals.sass";
 import { Titillium_Web } from "next/font/google";
 import type { Metadata } from "next";
 import Image from "next/image";
