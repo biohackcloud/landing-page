@@ -14,6 +14,15 @@ const config: Config = {
         level: { type: String },
       },
     },
+    fence: {
+      render: "Code",
+      attributes: {
+        language: {
+          type: String,
+          default: "javascript",
+        },
+      },
+    },
   },
   tags: {
     callout: {
@@ -23,14 +32,9 @@ const config: Config = {
           type: String,
           default: "default title",
         },
-      },
-    },
-    code: {
-      render: "Code",
-      attributes: {
-        language: {
+        type: {
           type: String,
-          default: "javascript",
+          default: "info",
         },
       },
     },

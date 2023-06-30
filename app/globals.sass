@@ -20,3 +20,17 @@ body
       font-weight: 400
       margin-top: 2rem
       margin-bottom: 1rem
+
+    table
+      border: 1px solid theme("colors.gray")
+
+      th,
+      td
+        border: 1px solid theme("colors.gray")
+        padding: 0.5rem
+        text-align: left
+
+    blockquote
+      @apply ml-6 my-4 text-main italic
+      >div
+        @apply rounded relative before:w-1 before:rounded-l before:h-full before:absolute before:top-0 before:-left-2 before:bg-gray before:z-0

@@ -1,9 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
 import matter from "gray-matter";
-import { remark } from "remark";
-import remarkGfm from "remark-gfm";
-import html from "remark-html";
+
 import { components, config } from "@/config/config.markdoc";
 import Markdoc from "@markdoc/markdoc";
 import React from "react";

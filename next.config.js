@@ -12,6 +12,4 @@ const nextConfig = {
   //     : "/",
 };
 
-module.exports = withMarkdoc(nextConfig)({
-  pageExtensions: ["md", "mdoc", "js", "jsx", "ts", "tsx"],
-});
+module.exports = nextConfig;

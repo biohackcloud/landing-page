@@ -17,17 +17,3 @@ The BioHackCloud is available exclusively for participants of BioHackathon event
 ## Who is building the BioHackCloud?
 
 The BioHackCloud is built by the BioHackathon community. If you are interested in contributing, please [sign up](/collaborate).
-
-| Month    | Savings |
-| -------- | ------- |
-| January  | $250    |
-| February | $80     |
-| March    | $420    |
-
-{% callout title="test" %} Provide a title in the tag and it's used in the component {% /callout %}
-
-{% code %}
-{
-"id": 1
-}
-{% /code %}
