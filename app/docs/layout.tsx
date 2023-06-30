@@ -28,7 +28,7 @@ export default async function Layout({ children }: PropsWithChildren) {
   const contents = await getDocsTableOfContents();
 
   return (
-    <section className="flex justify-between gap-5">
+    <section className="flex flex-col md:flex-row justify-between gap-5">
       <Contents contents={contents} />
 
       <div className=" flex-1">{children}</div>
