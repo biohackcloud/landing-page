@@ -1,4 +1,4 @@
-import { Config } from "@markdoc/markdoc";
+import type { Config } from "@markdoc/markdoc";
 import Callout from "@/components/MarkDocCallout";
 import Heading from "@/components/MarkDocHeading";
 import Code from "@/components/MarkDocCode";

@@ -17,3 +17,7 @@ The BioHackCloud is available exclusively for participants of BioHackathon event
 ## Who is building the BioHackCloud?
 
 The BioHackCloud is built by the BioHackathon community. If you are interested in contributing, please [sign up](/collaborate).
+
+~~text~~
+
+`text`

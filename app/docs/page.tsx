@@ -1,7 +1,13 @@
-export default function Page() {
+import { components } from "@/config/config.markdoc";
+import Markdoc from "@markdoc/markdoc";
+import React from "react";
+import { getMdData } from "@/utils/loadMdFile";
+
+export default async function Page() {
+  const { content } = await getMdData(["docs", "welcome.md"]);
   return (
-    <section>
-      <h2>Docs</h2>
+    <section className=" markdown mx-auto my-1">
+      {Markdoc.renderers.react(content, React, { components })}
     </section>
   );
 }
