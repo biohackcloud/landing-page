@@ -12,24 +12,24 @@ type CalloutProps = {
 
 export default function Callout({ children, title, type }: CalloutProps) {
   let bgColor = "";
-  let textColor = "";
+  let textColor = "text-main";
   let borderColor = "";
 
   switch (type) {
     case "warning":
-      bgColor = "bg-yellow-100";
-      textColor = "text-yellow-600";
-      borderColor = "border-yellow-200";
+      bgColor = "bg-warning-100";
+      textColor = "text-warning-900";
+      borderColor = "border-warning-200";
       break;
     case "info":
-      bgColor = "bg-blue-100";
-      textColor = "text-blue-600";
-      borderColor = "border-blue-200";
+      bgColor = "bg-info-100";
+      textColor = "text-info-900";
+      borderColor = "border-info-200";
       break;
     case "success":
-      bgColor = "bg-green-100";
-      textColor = "text-green-600";
-      borderColor = "border-green-200";
+      bgColor = "bg-success-100";
+      textColor = "text-success-900";
+      borderColor = "border-success-200";
       break;
     default:
       break;

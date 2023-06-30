@@ -3,11 +3,11 @@ import Markdoc from "@markdoc/markdoc";
 import React from "react";
 import { getMdData } from "@/utils/loadMdFile";
 
-export default async function Page() {
-  const { content } = await getMdData(["about", "about.md"]);
+export default async function Page({ params }: { params: { slug: string } }) {
+  const { content } = await getMdData(["docs", `${params.slug}.md`]);
 
   return (
-    <section className=" markdown max-w-[600px] mx-auto my-10]">
+    <section className=" markdown mx-auto my-1">
       {Markdoc.renderers.react(content, React, { components })}
     </section>
   );
