@@ -1,0 +1,45 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+body
+  background: #fff
+  color: #1a1c19
+
+@layer components
+  .markdown
+    a
+      color: theme("textColor.main")
+      text-decoration: underline
+      &:hover
+        color: theme("colors.highlight")
+
+    h1,h2,h3,h4,h5,h6
+      color: theme("textColor.main")
+      font-weight: 400
+
+    h1, h2
+      @apply mt-3 mb-2
+    h3, h4, h5, h6
+      @apply mt-2 mb-1
+
+    table
+      border: 1px solid theme("colors.gray")
+      @apply my-4
+
+      th,
+      td
+        border: 1px solid theme("colors.gray")
+        padding: 0.5rem
+        text-align: left
+
+    code
+      @apply px-1 py-0.5 bg-lightgray rounded text-main
+    pre
+      > code
+        @apply bg-none
+
+    blockquote
+      @apply ml-6 my-4 text-main italic
+      >div
+        @apply rounded relative before:w-1 before:rounded-l before:h-full before:absolute before:top-0 before:-left-2 before:bg-gray before:z-0
