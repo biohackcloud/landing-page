@@ -1,8 +1,6 @@
 import { PropsWithChildren } from "react";
-
 import { getMdData } from "@/utils/loadMdFile";
 import { readdir } from "fs/promises";
-import Link from "next/link";
 import path from "path";
 import type { DocsTableOfContents } from "@/types/types";
 import Contents from "@/components/DocsContents";
