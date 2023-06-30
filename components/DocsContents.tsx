@@ -64,7 +64,7 @@ export default function Contents({
           return (
             <li key={category}>
               {category !== "undefined" && (
-                <span className=" text-xl font-bold px-2"> {category}</span>
+                <span className="  font-bold px-2"> {category}</span>
               )}
 
               <ul>
