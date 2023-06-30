@@ -3,6 +3,7 @@ title: Some other doc
 author: admin
 date: 2020-07-01
 order: "2"
+category: Dummy category 2
 ---
 
 # Some other doc

@@ -9,7 +9,9 @@ order: "1"
 
 This is a dummy page to demonstrate how to add a new page to the documentation.
 
-~~ Some strikethrough text ~~
+~~Some strikethrough text~~
+
+**_Note_**
 
 Some table with markdown:
 
@@ -23,6 +25,8 @@ Some code:
 ```python
 print("Hello world!")
 ```
+
+> Blockquote text lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, arcu at facilisis ultricies, lectus magna tristique nunc, nec
 
 Some image:
 
