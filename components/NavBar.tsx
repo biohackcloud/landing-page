@@ -20,6 +20,18 @@ export default function Navbar() {
       </li>
       <li>
         <Link
+          href={"/services"}
+          className={`${
+            currentRoute === "/services"
+              ? " text-white bg-highlight px-2 py-0 rounded"
+              : "px-2 py-0"
+          }`}
+        >
+          Services
+        </Link>
+      </li>
+      <li>
+        <Link
           href={"/docs"}
           className={`${
             currentRoute === "/docs"
