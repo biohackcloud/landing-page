@@ -30,14 +30,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
       - name: Install Bun
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v5
         # with:
         #   # Automatically inject basePath in your Next.js configuration file and disable
         #   # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
@@ -45,7 +45,7 @@ jobs:
         #   # You may remove this line if you want to manage the configuration yourself.
         #   static_site_generator: next
       - name: Restore cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: |
             .next/cache
@@ -62,7 +62,7 @@ jobs:
         env:
           PAGES_BASE_URL: ${{ env.REPOSITORY_NAME }}
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./out
 
@@ -76,4 +76,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
