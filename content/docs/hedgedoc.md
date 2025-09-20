@@ -8,8 +8,8 @@ category: Services
 
 # HedgeDoc
 
-HedgeDoc is a collaborative Markdown editor that allows multiple users to edit documents in
-real-time.
+[HedgeDoc](https://docs.hedgedoc.org/) is a collaborative Markdown editor that allows multiple
+users to edit documents in real-time.
 
 ## Authentication
 
