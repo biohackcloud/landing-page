@@ -24,7 +24,7 @@ service (e.g., Google, ORCID) to log in with your personal credentials. Alternat
    LS account with a dedicated password.
 (3) **Complete Form & Verify:** Fill in the registration form, accept the usage policy, and submit. 
 You'll receive a verification email; click the link to confirm your email address.
-<br>
+
 You have successfully registered your LS ID and can now use it to access connected services.
 
 [![LS Register
@@ -39,7 +39,7 @@ Button](https://lifescience-ri.eu/fileadmin/lifescience-ri/media/Images/register
 (3) **Authenticate & Accept Data Transfer:** Log in with your personal credentials. If it's your 
 first time accessing that specific service, you'll see information about the data being released to 
 it. Review and accept to proceed.
-<br>
+
 You are now logged in.
 
 [![LS Login
