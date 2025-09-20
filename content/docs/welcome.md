@@ -11,7 +11,7 @@ This space is evolving. Your help in improving it is greatly appreciated!
 
 # BioHackCloud Docs
 
-Welcome to the BioHackCloud documentation pages.
+Welcome to the BioHackCloud documentation pages!
     
 Note that some of our services offer or require a [LS ID](docs/ls-login.md)
 for authentication.
