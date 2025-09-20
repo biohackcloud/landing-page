@@ -13,8 +13,8 @@ real-time.
 
 ## Authentication
 
-Access HedgeDoc by authenticating with your Life Science Login (LS Login) credentials. For details
-on how to get and use LS Login, please refer to our [LS Login documentation](../docs/ls-login.md).
+Access HedgeDoc by authenticating with your Life Science ID (LS ID) credentials. For details
+on how to get and use LS ID, please refer to our [LS Login documentation](../docs/ls_login).
 
 ## Markdown Flavor
 
