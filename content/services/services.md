@@ -20,3 +20,11 @@ Sponsored by [Berlin Institute of Health @ Charité](https://www.bihealth.org/)
 
 A trusted cloud native registry project for docker containers.  
 Sponsored by [Czech national infrastructure e-INFRA CZ](https://www.e-infra.cz/en)
+
+
+## Nextcloud
+
+[![Nextcloud](https://nextcloud.com/c/uploads/2022/11/logo_nextcloud_blue.svg)](https://nextcloud.biohackcloud.bihealth.org/)
+
+Content collaboration platform.   
+Sponsored by [Berlin Institute of Health @ Charité](https://www.bihealth.org/)
